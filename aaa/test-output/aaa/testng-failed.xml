@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [aaa]">
+  <test name="p1">
+    <groups>
+      <define name="t3">
+        <include name="chrometest"/>
+        <include name="ietest"/>
+      </define> <!-- t3 -->
+      <define name="firefoxtest">
+      </define> <!-- firefoxtest -->
+      <define name="t2">
+        <include name="chrometest"/>
+        <include name="firefoxtest"/>
+      </define> <!-- t2 -->
+      <define name="t1">
+        <include name="ietest"/>
+        <include name="firefoxtest"/>
+      </define> <!-- t1 -->
+      <define name="t4">
+        <include name="firefoxtest"/>
+      </define> <!-- t4 -->
+      <define name="ietest">
+      </define> <!-- ietest -->
+      <define name="chrometest">
+      </define> <!-- chrometest -->
+      <run>
+        <include name="t4"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="homework.cn.homework1"/>
+    </classes>
+  </test> <!-- p1 -->
+</suite> <!-- Failed suite [aaa] -->

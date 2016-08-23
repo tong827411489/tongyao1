@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="aaa">
+    <test name="p1" preserve-order="true">
+        <groups>
+            <define name="ietest"></define>
+            <define name="firefoxtest"></define>
+            <define name="chrometest"></define>
+            
+            <define name="t1">
+                <include name="ietest"/>
+                <include name="firefoxtest"/>
+            </define>
+            
+            <define name="t2">
+                <include name="chrometest"/>
+                <include name="firefoxtest"/>
+            </define>
+            
+            <define name="t3">
+                <include name="chrometest"/>
+                <include name="ietest"/>
+            </define>
+            <define name="t4">
+                <include name="firefoxtest"/>
+            </define>
+            
+            <run>
+                <include name="t4"></include>
+            </run>
+            
+        </groups>
+        
+      <classes>
+             <class name="homework.cn.homework1">
+      	
+      </class>
+        </classes>
+    </test>
+</suite>

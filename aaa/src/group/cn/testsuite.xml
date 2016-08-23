@@ -1,0 +1,28 @@
+<suite name="aaa">
+    <test name="p3" preserve-order="true">
+        <groups>
+            <define name="t1"></define>
+        	<define name="t2"></define>
+        	<define name="t3"></define>
+        
+       	 <define name="n1">
+        	    <include name="t1"/>
+            	 <include name="t2"/>
+       	 </define>
+       	 
+         	<define name="n2">
+           	 <include name="t1"/>
+            	 <include name="t3"/>
+       	 </define>
+       	 
+       	 <run>
+       	     <include name="n2"></include>
+       	 </run>
+       	 
+        </groups>
+        
+        <classes>
+            <class name="group.cn.group1"/>
+        </classes>
+    </test>
+</suite>
