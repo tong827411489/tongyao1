@@ -1,106 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="aaa" duration-ms="13431" started-at="2016-08-24T05:50:50Z" finished-at="2016-08-24T05:51:04Z">
-=======
-  <suite name="aaa" duration-ms="17473" started-at="2016-08-24T05:21:06Z" finished-at="2016-08-24T05:21:24Z">
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
+  <suite name="Default suite" duration-ms="109430" started-at="2016-08-25T12:38:10Z" finished-at="2016-08-25T12:39:59Z">
     <groups>
-<<<<<<< HEAD
-      <group name="submit1">
-        <method signature="homework2.test1()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test1" class="selenium2.cn.homework2"/>
-      </group> <!-- submit1 -->
-      <group name="submit2">
-        <method signature="homework2.test2()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test2" class="selenium2.cn.homework2"/>
-=======
-      <group name="submit4">
-        <method signature="homework2.test4()[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="test4" class="selenium2.cn.homework2"/>
-      </group> <!-- submit4 -->
-      <group name="submit2">
-        <method signature="homework2.test2()[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="test2" class="selenium2.cn.homework2"/>
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
-      </group> <!-- submit2 -->
     </groups>
-<<<<<<< HEAD
-    <test name="homework" duration-ms="13431" started-at="2016-08-24T05:50:50Z" finished-at="2016-08-24T05:51:04Z">
-      <class name="selenium2.cn.homework2">
-        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:selenium2.cn.homework2@2124532]" name="before" is-config="true" duration-ms="4260" started-at="2016-08-24T13:50:50Z" finished-at="2016-08-24T13:50:54Z">
+    <test name="Default test" duration-ms="109430" started-at="2016-08-25T12:38:10Z" finished-at="2016-08-25T12:39:59Z">
+      <class name="selenium2.cn.homework21">
+        <test-method status="PASS" signature="before(java.lang.String, java.lang.String)[pri:0, instance:selenium2.cn.homework21@2361d10f]" name="before" is-config="true" duration-ms="5849" started-at="2016-08-25T20:38:10Z" finished-at="2016-08-25T20:38:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ie]]>
-=======
-    <test name="homework" duration-ms="17473" started-at="2016-08-24T05:21:06Z" finished-at="2016-08-24T05:21:24Z">
-      <class name="selenium2.cn.homework2">
-        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="before" is-config="true" duration-ms="5806" started-at="2016-08-24T13:21:06Z" finished-at="2016-08-24T13:21:12Z">
-          <params>
-            <param index="0">
+                <![CDATA[locator]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
+                <![CDATA[data]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="test1()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test1" duration-ms="1585" started-at="2016-08-24T13:50:54Z" finished-at="2016-08-24T13:50:56Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:selenium2.cn.homework21@2361d10f]" name="test1" duration-ms="101095" started-at="2016-08-25T20:38:16Z" finished-at="2016-08-25T20:39:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework2@2124532]" name="end" is-config="true" duration-ms="1034" started-at="2016-08-24T13:50:56Z" finished-at="2016-08-24T13:50:57Z">
-=======
-        <test-method status="PASS" signature="test2()[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="test2" duration-ms="3341" started-at="2016-08-24T13:21:12Z" finished-at="2016-08-24T13:21:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="end" is-config="true" duration-ms="1491" started-at="2016-08-24T13:21:15Z" finished-at="2016-08-24T13:21:17Z">
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
+        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework21@2361d10f]" name="end" is-config="true" duration-ms="2451" started-at="2016-08-25T20:39:57Z" finished-at="2016-08-25T20:39:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-<<<<<<< HEAD
-        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:selenium2.cn.homework2@2124532]" name="before" is-config="true" duration-ms="3552" started-at="2016-08-24T13:50:57Z" finished-at="2016-08-24T13:51:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ie]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test2" duration-ms="2183" started-at="2016-08-24T13:51:01Z" finished-at="2016-08-24T13:51:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework2@2124532]" name="end" is-config="true" duration-ms="780" started-at="2016-08-24T13:51:03Z" finished-at="2016-08-24T13:51:04Z">
-=======
-        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="before" is-config="true" duration-ms="3659" started-at="2016-08-24T13:21:17Z" finished-at="2016-08-24T13:21:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test4()[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="test4" duration-ms="1821" started-at="2016-08-24T13:21:21Z" finished-at="2016-08-24T13:21:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework2@5f6d51c0]" name="end" is-config="true" duration-ms="1316" started-at="2016-08-24T13:21:22Z" finished-at="2016-08-24T13:21:24Z">
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- selenium2.cn.homework2 -->
-    </test> <!-- homework -->
-  </suite> <!-- aaa -->
+      </class> <!-- selenium2.cn.homework21 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

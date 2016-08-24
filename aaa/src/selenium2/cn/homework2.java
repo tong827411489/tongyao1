@@ -4,12 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
 import com.name.cn.Browsers;
 import com.name.cn.BrowsersType;
 
@@ -20,7 +19,7 @@ public class homework2 {
 	
 	@Parameters("platfrom")
 	@BeforeMethod(groups="browsers")
-	public void before(String platfrom){
+	public void before(@Optional("platfrom")String platfrom){
 		if (platfrom.equals("firefox")) {
 			browser = new Browsers(BrowsersType.firefox);
 			driver = browser.driver;
