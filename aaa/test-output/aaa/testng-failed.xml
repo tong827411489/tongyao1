@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [aaa]">
+<<<<<<< HEAD
   <parameter name="platfrom" value="ie"/>
+=======
+  <parameter name="platfrom" value="chrome"/>
+>>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
   <test name="homework">
     <groups>
       <define name="submit4">
@@ -26,7 +30,11 @@
       </define> <!-- submit2 -->
       <run>
         <include name="browsers"/>
+<<<<<<< HEAD
         <include name="ie"/>
+=======
+        <include name="chrome"/>
+>>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
       </run>
     </groups>
     <classes>
