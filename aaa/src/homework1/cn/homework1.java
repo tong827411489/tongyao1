@@ -42,7 +42,7 @@ public class homework1 {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			e.getMessage();
+			
 		}
 	}
 	

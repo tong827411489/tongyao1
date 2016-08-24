@@ -2,28 +2,56 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42364" started-at="2016-08-23T09:25:26Z" finished-at="2016-08-23T09:26:09Z">
+  <suite name="aaa" duration-ms="13431" started-at="2016-08-24T05:50:50Z" finished-at="2016-08-24T05:51:04Z">
     <groups>
+      <group name="submit1">
+        <method signature="homework2.test1()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test1" class="selenium2.cn.homework2"/>
+      </group> <!-- submit1 -->
+      <group name="submit2">
+        <method signature="homework2.test2()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test2" class="selenium2.cn.homework2"/>
+      </group> <!-- submit2 -->
     </groups>
-    <test name="Default test" duration-ms="42364" started-at="2016-08-23T09:25:26Z" finished-at="2016-08-23T09:26:09Z">
-      <class name="homework1.cn.homework1">
-        <test-method status="PASS" signature="before()[pri:0, instance:homework1.cn.homework1@4aa0a82c]" name="before" is-config="true" duration-ms="25175" started-at="2016-08-23T17:25:26Z" finished-at="2016-08-23T17:25:52Z">
+    <test name="homework" duration-ms="13431" started-at="2016-08-24T05:50:50Z" finished-at="2016-08-24T05:51:04Z">
+      <class name="selenium2.cn.homework2">
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:selenium2.cn.homework2@2124532]" name="before" is-config="true" duration-ms="4260" started-at="2016-08-24T13:50:50Z" finished-at="2016-08-24T13:50:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:homework1.cn.homework1@4aa0a82c]" name="test1" duration-ms="7351" started-at="2016-08-23T17:25:52Z" finished-at="2016-08-23T17:25:59Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test1" duration-ms="1585" started-at="2016-08-24T13:50:54Z" finished-at="2016-08-24T13:50:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:homework1.cn.homework1@4aa0a82c]" name="test2" duration-ms="6234" started-at="2016-08-23T17:25:59Z" finished-at="2016-08-23T17:26:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:homework1.cn.homework1@4aa0a82c]" name="end" is-config="true" duration-ms="3581" started-at="2016-08-23T17:26:05Z" finished-at="2016-08-23T17:26:09Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework2@2124532]" name="end" is-config="true" duration-ms="1034" started-at="2016-08-24T13:50:56Z" finished-at="2016-08-24T13:50:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- homework1.cn.homework1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="before(java.lang.String)[pri:0, instance:selenium2.cn.homework2@2124532]" name="before" is-config="true" duration-ms="3552" started-at="2016-08-24T13:50:57Z" finished-at="2016-08-24T13:51:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:selenium2.cn.homework2@2124532]" name="test2" duration-ms="2183" started-at="2016-08-24T13:51:01Z" finished-at="2016-08-24T13:51:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework2@2124532]" name="end" is-config="true" duration-ms="780" started-at="2016-08-24T13:51:03Z" finished-at="2016-08-24T13:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- selenium2.cn.homework2 -->
+    </test> <!-- homework -->
+  </suite> <!-- aaa -->
 </testng-results>

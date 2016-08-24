@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="aaa">
+    <parameter name="platfrom" value="ie"/>
+    <test name="homework" preserve-order="true">
+        <groups>
+            <define name="submit1"></define>
+            <define name="submit2"></define>
+            <define name="submit3"></define>
+            <define name="submit4"></define>
+            
+            <define name="ie">
+                <include name="submit1"/>
+                <include name="submit2"/>
+            </define>
+            
+            <define name="firefox">
+                <include name="submit1"/>
+                <include name="submit3"/>
+            </define>
+            
+            <define name="chrome">
+                <include name="submit2"/>
+                <include name="submit4"/>
+            </define>
+            
+            <run>
+                 <include name="browsers"></include>
+                <include name="ie"></include>
+               
+            </run>
+        </groups>
+        <classes>
+            <class name="selenium2.cn.homework2"/>
+        </classes>
+    </test>
+</suite>
