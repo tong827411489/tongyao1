@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [aaa]">
+  <parameter name="platfrom" value="chrome"/>
+  <test name="homework">
+    <groups>
+      <define name="submit4">
+      </define> <!-- submit4 -->
+      <define name="firefox">
+        <include name="submit1"/>
+        <include name="submit3"/>
+      </define> <!-- firefox -->
+      <define name="submit1">
+      </define> <!-- submit1 -->
+      <define name="submit3">
+      </define> <!-- submit3 -->
+      <define name="chrome">
+        <include name="submit2"/>
+        <include name="submit4"/>
+      </define> <!-- chrome -->
+      <define name="ie">
+        <include name="submit1"/>
+        <include name="submit2"/>
+      </define> <!-- ie -->
+      <define name="submit2">
+      </define> <!-- submit2 -->
+      <run>
+        <include name="browsers"/>
+        <include name="chrome"/>
+      </run>
+    </groups>
     <classes>
-      <class name="homework1.cn.homework1"/>
+      <class name="selenium2.cn.homework2"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- homework -->
+</suite> <!-- Failed suite [aaa] -->
