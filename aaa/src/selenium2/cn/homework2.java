@@ -44,7 +44,7 @@ public class homework2 {
 	public void test2(){
 		driver.get("http://www.126.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		System.out.println("1");
+		
 	}
 	
 	@Test(groups="submit3")
