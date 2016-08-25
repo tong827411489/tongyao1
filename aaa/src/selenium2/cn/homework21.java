@@ -67,6 +67,7 @@ public class homework21 {
 		String c = b+"";      //int 转化String类型做比较
 		Assert.assertEquals(a.equals(c),true);
 		wait.waitFor(5000);
+		
 	}
 	
 	@AfterClass
