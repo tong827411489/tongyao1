@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109430" started-at="2016-08-25T12:38:10Z" finished-at="2016-08-25T12:39:59Z">
+  <suite name="aaa" duration-ms="15579" started-at="2016-08-31T03:52:20Z" finished-at="2016-08-31T03:52:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109430" started-at="2016-08-25T12:38:10Z" finished-at="2016-08-25T12:39:59Z">
-      <class name="selenium2.cn.homework21">
-        <test-method status="PASS" signature="before(java.lang.String, java.lang.String)[pri:0, instance:selenium2.cn.homework21@2361d10f]" name="before" is-config="true" duration-ms="5849" started-at="2016-08-25T20:38:10Z" finished-at="2016-08-25T20:38:16Z">
+    <test name="webdriverApi" duration-ms="15579" started-at="2016-08-31T03:52:20Z" finished-at="2016-08-31T03:52:36Z">
+      <class name="selenium3.cn.webdriverApi">
+        <test-method status="PASS" signature="premise(java.lang.String, java.lang.String)[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="premise" is-config="true" duration-ms="5329" started-at="2016-08-31T11:52:20Z" finished-at="2016-08-31T11:52:26Z">
           <params>
             <param index="0">
               <value>
@@ -22,16 +22,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:selenium2.cn.homework21@2361d10f]" name="test1" duration-ms="101095" started-at="2016-08-25T20:38:16Z" finished-at="2016-08-25T20:39:57Z">
+        </test-method> <!-- premise -->
+        <test-method status="PASS" signature="hrSelect()[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="hrSelect" duration-ms="6136" started-at="2016-08-31T11:52:26Z" finished-at="2016-08-31T11:52:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:selenium2.cn.homework21@2361d10f]" name="end" is-config="true" duration-ms="2451" started-at="2016-08-25T20:39:57Z" finished-at="2016-08-25T20:39:59Z">
+        </test-method> <!-- hrSelect -->
+        <test-method status="PASS" signature="assertRegister()[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="assertRegister" duration-ms="2044" started-at="2016-08-31T11:52:32Z" finished-at="2016-08-31T11:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertRegister -->
+        <test-method status="PASS" signature="end()[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="end" is-config="true" duration-ms="2045" started-at="2016-08-31T11:52:34Z" finished-at="2016-08-31T11:52:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- selenium2.cn.homework21 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- selenium3.cn.webdriverApi -->
+    </test> <!-- webdriverApi -->
+  </suite> <!-- aaa -->
 </testng-results>

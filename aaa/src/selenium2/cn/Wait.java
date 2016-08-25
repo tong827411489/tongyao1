@@ -1,5 +1,7 @@
 package selenium2.cn;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -37,5 +39,9 @@ public class Wait {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	public void waitManage(){
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="aaa">
+    <parameter name="locator" value="locator"></parameter>
+    <parameter name="data" value="data"></parameter>
+    <test verbose="5" name="webdriverApi" preserve-order="true">
+        <classes>
+            <class name="selenium3.cn.webdriverApi">
+                <methods>
+                    <include name="hrSelect"/>
+                    <include name="assertRegister"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

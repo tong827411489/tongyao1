@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="aaa">
+    <parameter name="locator" value="locator"/>
+    <parameter name="data" value="data"/>
+    <test verbose="5" name="homework21" preserve-order="true" >
+        <classes>
+            <class name="selenium2.cn.homework21">
+                <methods>
+                    <include name="Login"/>
+                    <include name="restriveMailsIn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

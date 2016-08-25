@@ -19,6 +19,7 @@ public class parseProperties {
 			InputStreamReader is = new InputStreamReader(in);
 			BufferedReader br = new BufferedReader(is);
 			pr.load(br);
+			br.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

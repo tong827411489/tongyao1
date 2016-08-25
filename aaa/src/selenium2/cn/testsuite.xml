@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="aaa">
     <parameter name="platfrom" value="ie"/>
-    <test name="homework" preserve-order="true">
+    <test verbose = "5" name="homework" preserve-order="true">
         <groups>
             <define name="submit1"></define>
             <define name="submit2"></define>

@@ -3,7 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="selenium2.cn.homework21"/>
+      <class name="selenium3.cn.webdriverApi">
+        <methods>
+          <include name="assertRegister"/>
+        </methods>
+      </class> <!-- selenium3.cn.webdriverApi -->
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Failed suite [Default suite] -->

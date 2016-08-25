@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [aaa]">
-<<<<<<< HEAD
-  <parameter name="platfrom" value="ie"/>
-=======
-  <parameter name="platfrom" value="chrome"/>
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
-  <test name="homework">
-    <groups>
-      <define name="submit4">
-      </define> <!-- submit4 -->
-      <define name="firefox">
-        <include name="submit1"/>
-        <include name="submit3"/>
-      </define> <!-- firefox -->
-      <define name="submit1">
-      </define> <!-- submit1 -->
-      <define name="submit3">
-      </define> <!-- submit3 -->
-      <define name="chrome">
-        <include name="submit2"/>
-        <include name="submit4"/>
-      </define> <!-- chrome -->
-      <define name="ie">
-        <include name="submit1"/>
-        <include name="submit2"/>
-      </define> <!-- ie -->
-      <define name="submit2">
-      </define> <!-- submit2 -->
-      <run>
-        <include name="browsers"/>
-<<<<<<< HEAD
-        <include name="ie"/>
-=======
-        <include name="chrome"/>
->>>>>>> branch 'master' of https://github.com/tong827411489/tongyao1.git
-      </run>
-    </groups>
+  <parameter name="locator" value="locator"/>
+  <parameter name="data" value="data"/>
+  <test verbose="5" name="webdriverApi">
     <classes>
-      <class name="selenium2.cn.homework2"/>
+      <class name="selenium3.cn.webdriverApi">
+        <methods>
+          <include name="hrSelect"/>
+          <include name="assertRegister"/>
+        </methods>
+      </class> <!-- selenium3.cn.webdriverApi -->
     </classes>
-  </test> <!-- homework -->
+  </test> <!-- webdriverApi -->
 </suite> <!-- Failed suite [aaa] -->
