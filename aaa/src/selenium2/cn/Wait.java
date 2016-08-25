@@ -11,6 +11,7 @@ public class Wait {
 	private WebDriver driver;
 	private int timeout = 10;
 	
+
 	public Wait(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

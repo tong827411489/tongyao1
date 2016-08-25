@@ -1,6 +1,5 @@
 package selenium2.cn;
 
-
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
