@@ -102,6 +102,7 @@ public class webdriverApi {
 		driver.switchTo().defaultContent();
 		//判断后台是否存在该注册信息
 		Assert.assertEquals(frist.equals("建德他"), true);
+		
 	} 
 	
 	@AfterClass
