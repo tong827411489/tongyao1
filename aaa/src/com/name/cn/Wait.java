@@ -1,12 +1,10 @@
-package selenium2.cn;
+package com.name.cn;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -46,10 +44,4 @@ public class Wait {
 	public void waitManage(){
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
-	
-	public void waitXpath(String xpath){
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(xpath)));
-	}
-	
 }

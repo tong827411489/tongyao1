@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [aaa]">
-  <parameter name="locator" value="locator"/>
-  <parameter name="data" value="data"/>
-  <test verbose="5" name="webdriverApi">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="selenium3.cn.webdriverApi">
+      <class name="homework1.cn.homework1">
         <methods>
-          <include name="hrSelect"/>
-          <include name="assertRegister"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- selenium3.cn.webdriverApi -->
+      </class> <!-- homework1.cn.homework1 -->
     </classes>
-  </test> <!-- webdriverApi -->
-</suite> <!-- Failed suite [aaa] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->

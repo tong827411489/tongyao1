@@ -1,6 +1,7 @@
 package selenium3.cn;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -11,8 +12,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import com.name.cn.Browsers;
 import com.name.cn.BrowsersType;
+import com.name.cn.switchW;
+
 import selenium2.cn.Wait;
 import selenium2.cn.parseProperties;
 
@@ -22,6 +26,7 @@ public class webdriverApi {
 	private parseProperties locator;
 	private parseProperties data;
 	private Wait wait;
+	private switchW switchw;
 	
 	@Parameters({"locator","data"})
 	@BeforeClass
@@ -29,7 +34,7 @@ public class webdriverApi {
 		locator = new parseProperties(System.getProperty("user.dir")+"/tools/"+loc+".properties");
 		data = new parseProperties(System.getProperty("user.dir")+"/tools/"+da+".properties");
 		
-		Browsers browser = new Browsers(BrowsersType.chrome);
+		Browsers browser = new Browsers(BrowsersType.firefox);
 		driver = browser.driver;
 		wait = new Wait(driver);
 	}
@@ -42,10 +47,11 @@ public class webdriverApi {
 		//起始坐标
 		Point silder =  driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))).getLocation();
 		Actions action = new Actions(driver);
-		action.dragAndDropBy(driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))), silder.x+500, silder.y).perform();
+		action.dragAndDropBy(driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))), silder.x+500, silder.y).build().perform();
 		//终点坐标
 		Point silder1 =  driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))).getLocation();
 		Assert.assertEquals(silder1.x, silder.x+500);//坐标是否一致
+		
 		
 	}
 	
@@ -56,7 +62,7 @@ public class webdriverApi {
 		driver.findElement(By.xpath(locator.getvalue("hrregister"))).click();
 		driver.findElement(By.xpath(locator.getvalue("hrnextpage"))).click();
 		driver.findElement(By.xpath(locator.getvalue("companyname"))).clear();
-		driver.findElement(By.xpath(locator.getvalue("companyname"))).sendKeys("建德他");
+		driver.findElement(By.xpath(locator.getvalue("companyname"))).sendKeys("建么");
 		//选择地区
 		Select province = new Select(driver.findElement(By.xpath(locator.getvalue("selectprovince"))));
 		province.selectByVisibleText("浙江省");
@@ -66,11 +72,11 @@ public class webdriverApi {
 		area.selectByVisibleText("上城区");
 		//输入相关信息
 		driver.findElement(By.xpath(locator.getvalue("requestName"))).clear();
-		driver.findElement(By.xpath(locator.getvalue("requestName"))).sendKeys("风华绝他");
+		driver.findElement(By.xpath(locator.getvalue("requestName"))).sendKeys("风华绝么");
 		driver.findElement(By.xpath(locator.getvalue("imgAuthCode"))).clear();
 		driver.findElement(By.xpath(locator.getvalue("imgAuthCode"))).sendKeys("1234");
 		driver.findElement(By.xpath(locator.getvalue("phone"))).clear();
-		driver.findElement(By.xpath(locator.getvalue("phone"))).sendKeys("18268207221");
+		driver.findElement(By.xpath(locator.getvalue("phone"))).sendKeys("18268207228");
 		driver.findElement(By.xpath(locator.getvalue("phoneAuthCode"))).clear();
 		driver.findElement(By.xpath(locator.getvalue("phoneAuthCode"))).sendKeys("0987654321");
 		driver.findElement(By.xpath(locator.getvalue("checkpassword"))).clear();
@@ -82,6 +88,8 @@ public class webdriverApi {
 		driver.findElement(By.xpath(locator.getvalue("submit"))).click();
 		driver.findElement(By.xpath(locator.getvalue("Determine"))).click();
 		driver.findElement(By.xpath(locator.getvalue("DetermineAgain"))).click();
+		String a = driver.findElement(By.xpath(locator.getvalue("registerAssert"))).getText();
+		Assert.assertEquals(a.equals("你的申请正在审核中，审核结果会及时通过手机短信发送给你，请耐心等待！"), true);
 	}
 	
 	@Test
@@ -101,8 +109,48 @@ public class webdriverApi {
 		String frist = driver.findElement(By.xpath(locator.getvalue("firstname"))).getText();
 		driver.switchTo().defaultContent();
 		//判断后台是否存在该注册信息
-		Assert.assertEquals(frist.equals("建德他"), true);
+		Assert.assertEquals(frist.equals("建么"), true);
+		
 	} 
+	@Test
+	public void aa(){
+		driver.get("http://112.74.99.75:8080");
+		wait.waitForElementPresent(locator.getvalue("signIn"));
+		driver.findElement(By.xpath(locator.getvalue("signIn"))).click();
+		driver.findElement(By.xpath(locator.getvalue("account"))).clear();
+		driver.findElement(By.xpath(locator.getvalue("account"))).sendKeys("jqrjbr1");
+		driver.findElement(By.xpath(locator.getvalue("password"))).clear();
+		driver.findElement(By.xpath(locator.getvalue("password"))).sendKeys("111111");
+		
+	}
+	
+	@Test
+	public void test1(){
+		driver.get("http://www.baidu.com");
+		wait.waitManage();
+		driver.findElement(By.xpath("//input[@id='kw']")).clear();
+		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("web百度百科");
+		driver.findElement(By.xpath("//input[@id='su']")).click();
+		driver.findElement(By.xpath("//div[@id='1']/descendant::em[contains(text(),'百度百科')]")).click();
+		switchW swith = new switchW(driver);
+		swith.toSpecificWindow("互联网");
+		driver.findElement(By.xpath("//a[text()='首页']")).click();
+		swith.toSpecificWindow("百度搜索");
+		driver.findElement(By.xpath("//input[@id='kw']")).clear();
+		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("selenium");
+		driver.findElement(By.xpath("//input[@id='su']")).click();
+		wait.waitFor(5000);
+	}
+	
+	@Test
+	public void ada(){
+		driver.get("http://www.yixun.com");
+		wait.waitManage();
+		Point jilou = driver.findElement(By.xpath("//h2/a[contains(text(),'家用电器')]")).getLocation();
+		System.out.println(jilou);
+		((JavascriptExecutor)driver).executeScript("window.scrollBy("+jilou.getX()+","+jilou.getY()+")");
+		wait.waitFor(5000);
+	}
 	
 	@AfterClass
 	public void end(){

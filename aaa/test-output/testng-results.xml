@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="aaa" duration-ms="15579" started-at="2016-08-31T03:52:20Z" finished-at="2016-08-31T03:52:36Z">
+  <suite name="Default suite" duration-ms="28952" started-at="2016-09-05T03:11:16Z" finished-at="2016-09-05T03:11:45Z">
     <groups>
     </groups>
-    <test name="webdriverApi" duration-ms="15579" started-at="2016-08-31T03:52:20Z" finished-at="2016-08-31T03:52:36Z">
-      <class name="selenium3.cn.webdriverApi">
-        <test-method status="PASS" signature="premise(java.lang.String, java.lang.String)[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="premise" is-config="true" duration-ms="5329" started-at="2016-08-31T11:52:20Z" finished-at="2016-08-31T11:52:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[locator]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[data]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="28952" started-at="2016-09-05T03:11:16Z" finished-at="2016-09-05T03:11:45Z">
+      <class name="homework1.cn.homework1">
+        <test-method status="PASS" signature="before()[pri:0, instance:homework1.cn.homework1@6e7d3146]" name="before" is-config="true" duration-ms="23228" started-at="2016-09-05T11:11:16Z" finished-at="2016-09-05T11:11:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- premise -->
-        <test-method status="PASS" signature="hrSelect()[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="hrSelect" duration-ms="6136" started-at="2016-08-31T11:52:26Z" finished-at="2016-08-31T11:52:32Z">
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:homework1.cn.homework1@6e7d3146]" name="test2" duration-ms="3165" started-at="2016-09-05T11:11:39Z" finished-at="2016-09-05T11:11:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hrSelect -->
-        <test-method status="PASS" signature="assertRegister()[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="assertRegister" duration-ms="2044" started-at="2016-08-31T11:52:32Z" finished-at="2016-08-31T11:52:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assertRegister -->
-        <test-method status="PASS" signature="end()[pri:0, instance:selenium3.cn.webdriverApi@7b703ff1]" name="end" is-config="true" duration-ms="2045" started-at="2016-08-31T11:52:34Z" finished-at="2016-08-31T11:52:36Z">
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="end()[pri:0, instance:homework1.cn.homework1@6e7d3146]" name="end" is-config="true" duration-ms="2538" started-at="2016-09-05T11:11:42Z" finished-at="2016-09-05T11:11:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
-      </class> <!-- selenium3.cn.webdriverApi -->
-    </test> <!-- webdriverApi -->
-  </suite> <!-- aaa -->
+      </class> <!-- homework1.cn.homework1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
