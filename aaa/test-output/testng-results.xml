@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28952" started-at="2016-09-05T03:11:16Z" finished-at="2016-09-05T03:11:45Z">
+  <suite name="Default suite" duration-ms="55955" started-at="2016-09-06T07:37:23Z" finished-at="2016-09-06T07:38:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28952" started-at="2016-09-05T03:11:16Z" finished-at="2016-09-05T03:11:45Z">
+    <test name="Default test" duration-ms="55955" started-at="2016-09-06T07:37:23Z" finished-at="2016-09-06T07:38:19Z">
       <class name="homework1.cn.homework1">
-        <test-method status="PASS" signature="before()[pri:0, instance:homework1.cn.homework1@6e7d3146]" name="before" is-config="true" duration-ms="23228" started-at="2016-09-05T11:11:16Z" finished-at="2016-09-05T11:11:39Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:homework1.cn.homework1@69351290]" name="before" is-config="true" duration-ms="39888" started-at="2016-09-06T15:37:23Z" finished-at="2016-09-06T15:38:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:homework1.cn.homework1@6e7d3146]" name="test2" duration-ms="3165" started-at="2016-09-05T11:11:39Z" finished-at="2016-09-05T11:11:42Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:homework1.cn.homework1@69351290]" name="test2" duration-ms="13270" started-at="2016-09-06T15:38:03Z" finished-at="2016-09-06T15:38:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="end()[pri:0, instance:homework1.cn.homework1@6e7d3146]" name="end" is-config="true" duration-ms="2538" started-at="2016-09-05T11:11:42Z" finished-at="2016-09-05T11:11:45Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:homework1.cn.homework1@69351290]" name="end" is-config="true" duration-ms="2773" started-at="2016-09-06T15:38:16Z" finished-at="2016-09-06T15:38:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

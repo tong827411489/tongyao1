@@ -23,7 +23,7 @@ public class homework1 {
 		driver.get("http://www.baidu.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@id='kw']")).clear();
-		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("街上");
+		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("琛椾笂");
 		driver.findElement(By.xpath("//input[@id='su']")).click();
 		try {
 			Thread.sleep(5000);
@@ -40,7 +40,7 @@ public class homework1 {
 		driver = browser.driver;
 		driver.get("http://www.360.com/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//div[@id='header-block']/ul[@id='nav']/descendant::a[text()='社区']")).click();
+		driver.findElement(By.xpath("//div[@id='header-block']/ul[@id='nav']/descendant::a[text()='绀惧尯']")).click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -56,7 +56,7 @@ public class homework1 {
 		driver = browser.driver;
 		driver.get("http://www.qidian.com/");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//div[contains(@class,'main')]/descendant::a[text()='全部作品']")).click();
+		driver.findElement(By.xpath("//div[contains(@class,'main')]/descendant::a[text()='鍏ㄩ儴浣滃搧']")).click();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

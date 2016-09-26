@@ -44,13 +44,13 @@ public class webdriverApi {
 		driver.get("http://jqueryui.com/slider/");
 		wait.waitForElementPresent(locator.getvalue("premise"));
 		driver.switchTo().frame(driver.findElement(By.xpath(locator.getvalue("Silderframe"))));
-		//ÆğÊ¼×ø±ê
+		//èµ·å§‹åæ ‡
 		Point silder =  driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))).getLocation();
 		Actions action = new Actions(driver);
 		action.dragAndDropBy(driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))), silder.x+500, silder.y).build().perform();
-		//ÖÕµã×ø±ê
+		//ç»ˆç‚¹åæ ‡
 		Point silder1 =  driver.findElement(By.xpath(locator.getvalue("PrerequisiteSlider"))).getLocation();
-		Assert.assertEquals(silder1.x, silder.x+500);//×ø±êÊÇ·ñÒ»ÖÂ
+		Assert.assertEquals(silder1.x, silder.x+500);//åæ ‡æ˜¯å¦ä¸€è‡´
 		
 		
 	}
@@ -62,17 +62,17 @@ public class webdriverApi {
 		driver.findElement(By.xpath(locator.getvalue("hrregister"))).click();
 		driver.findElement(By.xpath(locator.getvalue("hrnextpage"))).click();
 		driver.findElement(By.xpath(locator.getvalue("companyname"))).clear();
-		driver.findElement(By.xpath(locator.getvalue("companyname"))).sendKeys("½¨Ã´");
-		//Ñ¡ÔñµØÇø
+		driver.findElement(By.xpath(locator.getvalue("companyname"))).sendKeys("å»ºä¹ˆ");
+		//é€‰æ‹©åœ°åŒº
 		Select province = new Select(driver.findElement(By.xpath(locator.getvalue("selectprovince"))));
-		province.selectByVisibleText("Õã½­Ê¡");
+		province.selectByVisibleText("æµ™æ±Ÿçœ");
 		Select city = new Select(driver.findElement(By.xpath(locator.getvalue("selectcity"))));
-		city.selectByVisibleText("º¼ÖİÊĞ");
+		city.selectByVisibleText("æ­å·å¸‚");
 		Select area = new Select(driver.findElement(By.xpath(locator.getvalue("selectarea"))));
-		area.selectByVisibleText("ÉÏ³ÇÇø");
-		//ÊäÈëÏà¹ØĞÅÏ¢
+		area.selectByVisibleText("ä¸ŠåŸåŒº");
+		//è¾“å…¥ç›¸å…³ä¿¡æ¯
 		driver.findElement(By.xpath(locator.getvalue("requestName"))).clear();
-		driver.findElement(By.xpath(locator.getvalue("requestName"))).sendKeys("·ç»ª¾øÃ´");
+		driver.findElement(By.xpath(locator.getvalue("requestName"))).sendKeys("é£åç»ä¹ˆ");
 		driver.findElement(By.xpath(locator.getvalue("imgAuthCode"))).clear();
 		driver.findElement(By.xpath(locator.getvalue("imgAuthCode"))).sendKeys("1234");
 		driver.findElement(By.xpath(locator.getvalue("phone"))).clear();
@@ -89,7 +89,7 @@ public class webdriverApi {
 		driver.findElement(By.xpath(locator.getvalue("Determine"))).click();
 		driver.findElement(By.xpath(locator.getvalue("DetermineAgain"))).click();
 		String a = driver.findElement(By.xpath(locator.getvalue("registerAssert"))).getText();
-		Assert.assertEquals(a.equals("ÄãµÄÉêÇëÕıÔÚÉóºËÖĞ£¬ÉóºË½á¹û»á¼°Ê±Í¨¹ıÊÖ»ú¶ÌĞÅ·¢ËÍ¸øÄã£¬ÇëÄÍĞÄµÈ´ı£¡"), true);
+		Assert.assertEquals(a.equals("ä½ çš„ç”³è¯·æ­£åœ¨å®¡æ ¸ä¸­ï¼Œå®¡æ ¸ç»“æœä¼šåŠæ—¶é€šè¿‡æ‰‹æœºçŸ­ä¿¡å‘é€ç»™ä½ ï¼Œè¯·è€å¿ƒç­‰å¾…ï¼"), true);
 	}
 	
 	@Test
@@ -108,8 +108,8 @@ public class webdriverApi {
 		driver.switchTo().frame("settledListConfig-iframe");
 		String frist = driver.findElement(By.xpath(locator.getvalue("firstname"))).getText();
 		driver.switchTo().defaultContent();
-		//ÅĞ¶ÏºóÌ¨ÊÇ·ñ´æÔÚ¸Ã×¢²áĞÅÏ¢
-		Assert.assertEquals(frist.equals("½¨Ã´"), true);
+		//åˆ¤æ–­åå°æ˜¯å¦å­˜åœ¨è¯¥æ³¨å†Œä¿¡æ¯
+		Assert.assertEquals(frist.equals("å»ºä¹ˆ"), true);
 		
 	} 
 	@Test
@@ -129,13 +129,13 @@ public class webdriverApi {
 		driver.get("http://www.baidu.com");
 		wait.waitManage();
 		driver.findElement(By.xpath("//input[@id='kw']")).clear();
-		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("web°Ù¶È°Ù¿Æ");
+		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("webç™¾åº¦ç™¾ç§‘");
 		driver.findElement(By.xpath("//input[@id='su']")).click();
-		driver.findElement(By.xpath("//div[@id='1']/descendant::em[contains(text(),'°Ù¶È°Ù¿Æ')]")).click();
+		driver.findElement(By.xpath("//div[@id='1']/descendant::em[contains(text(),'ç™¾åº¦ç™¾ç§‘')]")).click();
 		switchW swith = new switchW(driver);
-		swith.toSpecificWindow("»¥ÁªÍø");
-		driver.findElement(By.xpath("//a[text()='Ê×Ò³']")).click();
-		swith.toSpecificWindow("°Ù¶ÈËÑË÷");
+		swith.toSpecificWindow("äº’è”ç½‘");
+		driver.findElement(By.xpath("//a[text()='é¦–é¡µ']")).click();
+		swith.toSpecificWindow("ç™¾åº¦æœç´¢");
 		driver.findElement(By.xpath("//input[@id='kw']")).clear();
 		driver.findElement(By.xpath("//input[@id='kw']")).sendKeys("selenium");
 		driver.findElement(By.xpath("//input[@id='su']")).click();
@@ -146,7 +146,7 @@ public class webdriverApi {
 	public void ada(){
 		driver.get("http://www.yixun.com");
 		wait.waitManage();
-		Point jilou = driver.findElement(By.xpath("//h2/a[contains(text(),'¼ÒÓÃµçÆ÷')]")).getLocation();
+		Point jilou = driver.findElement(By.xpath("//h2/a[contains(text(),'å®¶ç”¨ç”µå™¨')]")).getLocation();
 		System.out.println(jilou);
 		((JavascriptExecutor)driver).executeScript("window.scrollBy("+jilou.getX()+","+jilou.getY()+")");
 		wait.waitFor(5000);

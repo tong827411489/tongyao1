@@ -16,7 +16,7 @@ public class Browsers {
 	
 	public Browsers(BrowsersType browswetype){
 		switch (browswetype) {
-		//调用火狐
+		//璋冪敤鐏嫄
 		case firefox:
 			File firebug = new File(projectpath+"/tools/firebug@software.joehewitt.com.xpi");
 			File fileXPath = new File(projectpath+"/tools/FireXPath@pierre.tholence.com.xpi");
@@ -34,7 +34,7 @@ public class Browsers {
 			driver = new FirefoxDriver(frirefoxprofile);
 			driver.manage().window().maximize();
 			break;
-			//调用ie
+			//璋冪敤ie
 		case ie:
 			System.setProperty("webdriver.ie.driver", projectpath+"/tools/IEDriverServer641.exe");
 			caps = DesiredCapabilities.internetExplorer();
@@ -45,7 +45,7 @@ public class Browsers {
 			driver = new InternetExplorerDriver();
 			driver.manage().window().maximize();
 			break;
-			//调用chrome
+			//璋冪敤chrome
 		case chrome:
 			System.setProperty("webdriver.chrome.driver", projectpath+"/tools/chromedriver.exe");
 			caps = DesiredCapabilities.chrome();

@@ -54,7 +54,7 @@ public class homework21 {
 		
 		String expectedNum = driver.findElement(By.xpath(locator.getvalue("outlook"))).getText().substring(1, 3);
 		driver.findElement(By.xpath(locator.getvalue("outlook"))).click();
-		//ÊÕ¼şÏäÎ´¶ÁÓÊ¼şÊÇ·ñÏÔÊ¾Ò»ÖÂ
+		//æ”¶ä»¶ç®±æœªè¯»é‚®ä»¶æ˜¯å¦æ˜¾ç¤ºä¸€è‡´
 		int b = 0;
 		int actualNum = Integer.parseInt(driver.findElement(By.xpath(locator.getvalue("page"))).getText().substring(2, 3));
 		for (int i = 0; i < actualNum-1; i++) {
@@ -65,7 +65,7 @@ public class homework21 {
 			driver.findElement(By.xpath(locator.getvalue("nextpage"))).click();
 			
 		}
-		String c = b+"";      //int ×ª»¯StringÀàĞÍ×ö±È½Ï
+		String c = b+"";      //int è½¬åŒ–Stringç±»å‹åšæ¯”è¾ƒ
 		Assert.assertEquals(expectedNum.equals(c),true);
 		wait.waitFor(5000);
 	}

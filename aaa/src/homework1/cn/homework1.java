@@ -26,21 +26,21 @@ public class homework1 {
 		wait = new Wait(driver);
 		driver.get("http://www.126.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		//½øÈëiframe
+		//è¿›å…¥iframe
 		driver.switchTo().frame("x-URS-iframe");
-		//ÕÊºÅÃÜÂëÌîĞ´µÇÂ¼
-		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='ÓÊÏäÕÊºÅ»òÊÖ»úºÅ']")).clear();
-		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='ÓÊÏäÕÊºÅ»òÊÖ»úºÅ']")).sendKeys("FireflyAutomation");
-		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='ÃÜÂë']")).clear();
-		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='ÃÜÂë']")).sendKeys("Firefly");
+		//å¸å·å¯†ç å¡«å†™ç™»å½•
+		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='é‚®ç®±å¸å·æˆ–æ‰‹æœºå·']")).clear();
+		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='é‚®ç®±å¸å·æˆ–æ‰‹æœºå·']")).sendKeys("FireflyAutomation");
+		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='å¯†ç ']")).clear();
+		driver.findElement(By.xpath("//form[@id='login-form']/descendant::input[@data-placeholder='å¯†ç ']")).sendKeys("Firefly");
 		driver.findElement(By.xpath("//a[@id='dologin']")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//div[@id='cnt-box-parent']/descendant::a[text()='¼ÌĞøµÇÂ¼']")).click();
+		driver.findElement(By.xpath("//div[@id='cnt-box-parent']/descendant::a[text()='ç»§ç»­ç™»å½•']")).click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.switchTo().defaultContent();
 	}
 	
-	//²é¿´ÊÕ¼şÏä
+	//æŸ¥çœ‹æ”¶ä»¶ç®±
 //	@Test
 //	public void test1(){
 //		
@@ -53,16 +53,16 @@ public class homework1 {
 //		}
 //	}
 	
-	//²é¿´Î´¶Á
+	//æŸ¥çœ‹æœªè¯»
 	@Test
 	public void test2(){
-		wait.waitForElementPresent("//div[@id='dvNavTree']/descendant::span[text()='ÊÕ¼şÏä']");
+		wait.waitForElementPresent("//div[@id='dvNavTree']/descendant::span[text()='æ”¶ä»¶ç®±']");
 		Actions actions = new Actions(driver);
-		actions.contextClick(driver.findElement(By.xpath("//div[@id='dvNavTree']/descendant::span[text()='ÊÕ¼şÏä']"))).build().perform();
+		actions.contextClick(driver.findElement(By.xpath("//div[@id='dvNavTree']/descendant::span[text()='æ”¶ä»¶ç®±']"))).build().perform();
 		
-		driver.findElement(By.xpath("//div[contains(@style,'visible')]/descendant::span[text()='²é¿´Î´¶Á']")).click();
-		String unlook = driver.findElement(By.xpath("//div[@id='dvContainer']/descendant::h1[text()='Î´¶Á']")).getText();
-		Assert.assertEquals(unlook.equals("Î´¶Á"), true);
+		driver.findElement(By.xpath("//div[contains(@style,'visible')]/descendant::span[text()='æŸ¥çœ‹æœªè¯»']")).click();
+		String unlook = driver.findElement(By.xpath("//div[@id='dvContainer']/descendant::h1[text()='æœªè¯»']")).getText();
+		Assert.assertEquals(unlook.equals("æœªè¯»"), true);
 	}
 	@AfterClass
 	public void end(){

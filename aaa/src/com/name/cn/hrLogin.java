@@ -25,8 +25,8 @@ public class hrLogin {
 		wait = new Wait(driver);
 		
 		driver.get("http://192.168.0.186:9092");
-		wait.waitForElementPresent("//div[contains(@class,'header')]/descendant::a[text()='µÇÂ¼']");
-		driver.findElement(By.xpath("//div[contains(@class,'header')]/descendant::a[text()='µÇÂ¼']")).click();
+		wait.waitForElementPresent("//div[contains(@class,'header')]/descendant::a[text()='ç™»å½•']");
+		driver.findElement(By.xpath("//div[contains(@class,'header')]/descendant::a[text()='ç™»å½•']")).click();
 		driver.findElement(By.xpath("//input[@id='txtAccount']")).clear();
 		driver.findElement(By.xpath("//input[@id='txtAccount']")).sendKeys(account);
 		driver.findElement(By.xpath("//input[@id='txtPassword']")).clear();
